@@ -1,0 +1,16 @@
+<div>
+	<h2>Restaurant: {{restaurants.name}}</h2>
+	<img class="item-img" src="{{restaurant.image}}" />
+		
+	<h3> We have {{restaurant.Menus.length}} Menus</h3>
+	{{#each restaurants.Menu}} <!-- for each sauce in sauces, create this html -->
+
+		<article class="clearfix item-container block">
+			
+			<h2>{{title}}</h2>
+			<a class="btn" href="/restaurants/{{id}}">View Restaurant</a>
+		</article>
+
+	{{/each}}
+	<a class="btn" href="/restaurants/{{id}}">All Restaurant</a>
+</div>
